@@ -1,10 +1,18 @@
-import * as React from 'react'
-import styles from './styles.module.css'
+import * as React from 'react';
+import { Component } from 'react';
+
+import styles from './styles.module.css';
 
 interface Props {
-  text: string
+  text: string;
+  color: string;
 }
-
-export const ExampleComponent = ({ text }: Props) => {
-  return <div className={styles.test}>Example Component: {text}</div>
+export default class GraphComponent extends Component<Props> {
+  render() {
+    return (
+      <div className={styles.test}>
+        Graph Component: {this.props.text} , {this.props.color}{' '}
+      </div>
+    );
+  }
 }

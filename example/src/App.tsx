@@ -1,10 +1,10 @@
-import React from 'react'
+import 'react-graph/dist/index.css';
 
-import { ExampleComponent } from 'react-graph'
-import 'react-graph/dist/index.css'
+import React from 'react';
+import GraphComponent from 'react-graph';
 
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
-}
+  return <GraphComponent text='Create React Library Example 😄' color='red' />;
+};
 
-export default App
+export default App;
